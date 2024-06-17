@@ -1,0 +1,14 @@
+# files
+*.ttf
+*.zip
+*.png
+
+# venv
+venv/
+
+# cache
+__pycache__
+
+# notebook
+*.ipynb
+
