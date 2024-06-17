@@ -11,14 +11,6 @@ from words import WORDS, EMOJIS
 BASE_DIR = Path(__file__).parent.resolve()
 USED_WORDS_PATH = BASE_DIR / "used_words.txt"
 
-FONT_FILE_PATH = BASE_DIR / "seguiemj.ttf"
-
-if not FONT_FILE_PATH.exists():
-    raise FileNotFoundError(
-        f"Font file not found at {FONT_FILE_PATH}. "
-        "Please download the font file using the download_emoji_font.py script."
-    )
-
 
 class Color(Enum):
     WHITE = (1, 1, 1)

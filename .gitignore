@@ -12,3 +12,5 @@ __pycache__
 # notebook
 *.ipynb
 
+# game files
+used_words.txt
