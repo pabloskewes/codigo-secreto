@@ -6,7 +6,7 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
-from words import WORDS, EMOJIS
+from words import WORDS
 
 BASE_DIR = Path(__file__).parent.resolve()
 USED_WORDS_PATH = BASE_DIR / "used_words.txt"
@@ -133,7 +133,7 @@ def write_used_words(words: List[str]) -> None:
 
 
 def generate_boards() -> List[List[str]]:
-    words: list[str] = choose_words(available_words=EMOJIS)
+    words: list[str] = choose_words(available_words=WORDS, n=25)
     colors: list[list[Color]] = generate_custom_colors()
     whites: list[list[Color]] = generate_white_colors()
 
